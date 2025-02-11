@@ -69,7 +69,7 @@
     ];
   
     noButton.addEventListener('click', function() {
-      if (noClickCount < 6) {
+      if (noClickCount < 8) {
         noClickCount++;
         imageDisplay.src = imagePaths[noClickCount];
         buttonHeight += 35; // Increase height by 5px on each click
@@ -78,9 +78,9 @@
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 6) {
-          noButton.textContent = ["มิอาวว", "แน่ใจนะ?", "เป็นเถอะได้โปรด", "อย่าทำแบบนี้เลยย :(", "เนมใจสลายยย", "จะร้องไห้แล้วนะ.."][noClickCount];
-          if (noClickCount === 5) {
+        if (noClickCount < 8) {
+          noButton.textContent = ["หืมมมมมม","มิอาวว", "แน่ใจนะ?", "เป็นเถอะได้โปรด", "อย่าทำแบบนี้เลยย :(", "เนมใจสลายยย", "จะร้องไห้แล้วนะ..","ไม่รู้ๆๆๆๆๆ"][noClickCount];
+          if (noClickCount === 7) {
             noClickCount = 0;
           }
         }
